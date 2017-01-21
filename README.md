@@ -1,0 +1,2 @@
+# VB.Net_CriandoObjetosEmRunTime
+Criando Componentes no código fonte sem usar o "Project / Components" (sem referenciar no projeto).  Exemplos de como usar "Licenses.Add", "VBControlExtender" e o "ObjectEvent". Cria em 'run-time' uma Label e uma ImageCombo.   Creating components in source code without using the "Project/Components" (without reference to the project).  Examples of how to use "Licenses. Add", "VBControlExtender" and "ObjectEvent. Creates in 'run-time' a Label and an ImageCombo.
