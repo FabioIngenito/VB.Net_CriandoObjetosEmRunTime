@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CriandoObjetosEmRunTime
+</name>
+</assembly>
+<members>
+<member name="M:CriandoObjetosEmRunTime.clsBox.CriaCombos(System.Windows.Forms.Form,System.Windows.Forms.ComboBox,System.Int64,System.Int64)">
+ <summary>
+ Cria Combos em sequência de acordo com os parâmetros passados
+ Create Combos in sequence according to the parameters passed
+ </summary>
+ <param name="frm">Form onde serão criadas - Form where you will be created</param>
+ <param name="cbn">Molde de ComboBox para copiar nas outras - ComboBox template to copy other</param>
+ <param name="NroCombos">Número de ComboBox a serem criadas - Number of ComboBox to be created</param>
+ <param name="NroColunas">Número de Colunas onde serão criadas as Combobox (somente pra controle) - Number of columns where the Combobox will be created (only to control)</param>
+ <remarks>Esta Sub serve para criar as ComboBox de acordo com o usuário desta Sub necessitar - This Sub serves to make ComboBox according to the user of this Sub you need</remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.clsBox.PosicionaCombo(System.Int64,System.Int32)">
+ <summary>
+ Faz o controle das ComboBox na tela
+ Makes the control of the ComboBox on the screen
+ </summary>
+ <param name="X">Número de ComboBox - Number of ComboBox</param>
+ <param name="cols">Número de Colunas - Number of columns</param>
+ <remarks>Acerta a posição das ComboBox na tela controlando as Colunas
+ Sets the position of the ComboBox on the screen controlling the columns</remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.clsBox.RetiraTodasCombos(System.Windows.Forms.Form)">
+ <summary>
+ Retira as Combos de uma determinada Form
+ Removes the Combos of a particular Form
+ </summary>
+ <param name="frm">Form onde serão retiradas as ComboBox - Form where you will be taken the ComboBox</param>
+ <remarks>Retira TODAS as ComboBox da Tela - Removes all the ComboBox of the screen</remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.clsBox.PreencheCombos(System.Windows.Forms.Form)">
+ <summary>
+ Preenche as ComboBox
+ Fills the ComboBox
+ </summary>
+ <param name="frm">Formulário onde serão preenchidas as ComboBox - Form where the ComboBox</param>
+ <remarks>Para que não fique vazias, preenche com duas linhas cada ComboBox - To empty, fills with two lines each ComboBox</remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.clsBox.m_ComboBoxes_AtualizaTexto(System.Object,System.EventArgs)">
+ <summary>
+ Exemplo de Handler na ComboBox
+ Handler example in the ComboBox
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>Mostra como funciona um Evento na Array de ComboBox - Shows how to work an event in the Array of ComboBox</remarks>
+</member>
+<member name="T:CriandoObjetosEmRunTime.frmTeste">
+ <summary>
+ Criando Componentes no código fonte sem usar o "Project / Components" (sem referenciar no projeto). 
+ Exemplos de como usar "Licenses.Add", "VBControlExtender" e o "ObjectEvent". Cria em 'run-time' uma Label e uma ImageCombo.
+ 
+ Creating components in source code without using the "Project/Components" (without reference to the project). 
+ Examples of how to use "Licenses. Add", "VBControlExtender" and "ObjectEvent. Creates in 'run-time' a Label and an ImageCombo.
+ </summary>
+</member>
+<member name="M:CriandoObjetosEmRunTime.frmTeste.MontaForm1">
+ <summary>
+ Monta o formulário principal que gerencia o formulário secundário
+ Assemble the main form that manages the secondary form
+ 
+ Cria os OCXs no "waBoxMarcaAgua" (neste form)
+ Creates the OCXs in the "waBoxMarcaAgua" (in this form)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.frmTeste.extra2">
+ <summary>
+ Cria a ComboBox Principal (número 0) no form secundário (frmteste)
+ Creates the Main ComboBox (number 0) in the form (frmteste)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.frmTeste.btnCriar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cria e gerencia as ComboBox
+ Creates and manages the ComboBox
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.frmTeste.btnRetirarTudo_Click(System.Object,System.EventArgs)">
+ <summary>
+ Retira TODAS as ComboBox, menos a Número ZERO
+ Removes all ComboBox, less the number ZERO
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.frmTeste.cBox_AtualizaTexto(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Handler de Atulização de Texto
+ Text update handler
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>Serve para inibir a digitação de letras, permite a digitação somente de números.
+ Serves to inhibit typing letters, allows to type numbers only.</remarks>
+</member>
+<member name="M:CriandoObjetosEmRunTime.frmTeste.cBoxColunas_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Handler NORMAL
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>Serve para inibir a digitação de letras, permite a digitação somente de números.
+ Serves to inhibit typing letters, allows to type numbers only.</remarks>
+</member>
+<member name="T:CriandoObjetosEmRunTime.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CriandoObjetosEmRunTime.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CriandoObjetosEmRunTime.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>
